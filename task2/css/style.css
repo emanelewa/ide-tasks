@@ -1,0 +1,428 @@
+/*header*/
+header{
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+nav{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #383838;
+}
+nav{
+    color: white;
+}
+nav a{
+    color: #ffde1b;
+    font-size: 16px;
+    font-family: Arial;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav a:hover{
+    color: #ffffff;
+}
+hr{
+    margin: 0;
+}
+
+/*****************************************about me************************************************/
+.about_me{
+    width: 100%;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #dddddd;
+}
+.title{
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+}
+.title h1{
+    color:#383838;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 0;
+}
+.title hr{
+    width:5%;
+    background-color:#ffde1b;
+    height: 4px;
+    margin: 20px auto;
+    border: 0;
+}
+.title p{
+    margin: 0 auto;
+    font-family: Arial;
+    color:#383838;
+    font-size: 15px;
+    width: 50%;
+}
+.about_details{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    padding-top: 50px;
+}
+.about_me .about_details .about_left{
+    float: left;
+    border: 1px solid #dcdcd5;
+    box-shadow: 2px 2px 5px 1px #d8d8d8;
+    width: 50%;
+    height: 500px;
+    background-image: url("../images/about.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.about_details article{
+    width: 40%;
+    float: right;
+    height: 500px;
+    padding-right: 20px;
+}
+.about_details article h3{
+    margin: 0;
+    font-family: Arial;
+}
+.about_details article h3 span{
+    margin: 0;
+    font-family: Arial;
+    color: #ffde1b;
+    font-size: 27px;
+    text-transform: capitalize;
+    text-shadow: 2px 1px 1px #9b621f;
+}
+.about_details article h1{
+    color: white;
+    background-color:#383838;
+    padding: 10px;
+    font-size: 40px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+.about_details article p{
+    font-family: Arial;
+    color:#383838;
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 45px;
+}
+.about_details article ul{
+    margin: 0;
+    padding: 10px;
+    background-color: #efeded;
+    border: 1px solid #e6e4e4;
+}
+.about_details article ul li{
+    list-style: none;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 25px;
+}
+.about_details article ul li span{
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.about_details article button{
+    background-color:#ffde1b;
+    color:#383838;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/**************************************services************************************************/
+.services{
+    width: 100%;
+    background-color: #fec704a6;
+    border-bottom: 1px solid #dddddd;
+    overflow: hidden;
+    height: 450px;
+}
+.services .title h1{
+    color:white;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 0;
+}
+.services .title hr{
+    width:5%;
+    background-color:white;
+    height: 4px;
+    margin: 20px auto;
+    border: 0;
+}
+.services .title p{
+    margin: 0 auto;
+    font-family: Arial;
+    color:white;
+    font-size: 15px;
+    width: 50%;
+}
+.services .all_services{
+    margin-top: 50px;
+    text-align: center;
+}
+.services .all_services .block h3{
+    background-color:#383838;
+    color: white;
+    text-transform: uppercase;
+    width: 50%;
+    padding:5px 10px;
+    margin: 10px auto;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.services .all_services .block p{
+    font-family: Arial;
+    color:#383838;
+    font-size: 13px;
+    font-weight: bold;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*****************************************************portfolio**************************************/
+.portfolio{
+    width: 100%;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #dddddd;
+}
+.portfolio .gallery{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.portfolio .gallery a{
+    font-weight: bold;
+    background-color:#383838;
+    color: white;
+    font-family: Arial;
+    text-transform: capitalize;
+    padding:5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.portfolio .profile_photo{
+    text-align: center;
+}
+
+/************************************************client**********************************************/
+.client{
+    width: 100%;
+    background-image: url("../images/laptop.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    border-bottom: 1px solid #dddddd;
+    overflow: hidden;
+    height: 500px;
+}
+.client .cover{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0 , 0, 0.4);
+}
+.client .title h1{
+    color:white;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 0;
+}
+.client .title hr{
+    width:5%;
+    background-color:white;
+    height: 4px;
+    margin: 20px auto;
+    border: 0;
+}
+.client .title p{
+    margin: 0 auto;
+    font-family: Arial;
+    color:white;
+    font-size: 15px;
+    width: 50%;
+}
+.client .my_client{
+    margin-top: 80px;
+    text-align: center;
+}
+.client .my_client .right_arrow{
+    float: left;
+    width: 25%;
+}
+.client .my_client .left_arrow{
+    float: right;
+    width: 25%;
+}
+.client .my_client .clients{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.client .my_client .clients p{
+    margin: 10px auto;
+    font-family: Arial;
+    color:white;
+    font-size: 15px;
+}
+
+/********************************************clients_companies*************************************/
+.clients_companies{
+    width: 100%;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #dddddd;
+    height: 290px;
+}
+.clients_companies .companies{
+    background-color: #e6e4e4;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+.clients_companies .companies img{
+    margin: 5px;
+}
+/***************************************************contact**************************************/
+.contact{
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+}
+.contact form{
+    margin-top: 50px;
+}
+.contact form .left{
+    width: 50%;
+    float: left;
+}
+.contact form label{
+    width: 100%;
+    color: #afafaf;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: Arial;
+}
+.contact form input{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px 0px 20px 10px;
+    border-bottom: 1px solid #c8c8c8;
+    background-color: #f7f7f7;
+    border: none;
+    box-shadow: 2px 2px 2px 1px #c8c8c838;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.contact form input::placeholder{
+    color: #c8c8c8;
+}
+.contact form .right{
+    width: 50%;
+    float: right;
+}
+.contact form .right label{
+    font-size: 17px;
+}
+.contact form .right textarea{
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 20px 0px 20px 10px;
+    border-bottom: 1px solid #c8c8c8;
+    background-color: #f7f7f7;
+    border: none;
+    box-shadow: 2px 2px 2px 1px #c8c8c838;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.contact form .right textarea::placeholder{
+    color: #c8c8c8;
+    font-size: 16px;
+}
+.contact form .form_submit{
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0;
+}
+.contact form .form_submit .submit{
+    background-color: #ffde1b;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #383838;
+    width: 230px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+
+
+
+
+/****************************************footer**************************************************/
+footer{
+    width: 100%;
+    background-color:#383838;
+    border-bottom: 1px solid #dddddd;
+    color: white;
+    overflow: hidden;
+}
+footer .bottom_logo{
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+}
+footer .bottom_logo p{
+    width: 50%;
+    color: white;
+    margin: 10px auto;
+}
+footer .Quick_Links{
+    width: 25%;
+    float: left;
+}
+footer .Quick_Links ul{
+    margin: 0;
+    padding: 0;
+}
+footer .Quick_Links ul li{
+   list-style: none;
+}
+footer .Quick_Links ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+}
+footer .Contact_Me{
+    width: 25%;
+    float: left;
+}
+footer .Contact_Me ul{
+    margin: 0;
+    padding: 0;
+}
+footer .Contact_Me ul li{
+    list-style: none;
+    color: white;
+    line-height: 30px;
+}
+footer .Follow_Me{
+    width: 25%;
+    float: left;
+}
+footer .Follow_Me .social img{
+    width: 8%;
+}
+footer .copyright{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+}
