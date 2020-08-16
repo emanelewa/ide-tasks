@@ -1,0 +1,210 @@
+@charset"UTF-8";
+/*reset*/
+*,
+*:after,
+*:before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*main style*/
+body, html{
+    line-height: 1.7rem;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+ p{
+    font-size: 14px;
+    color: #2F2F2F;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight: bold;
+}
+/*utility classes*/
+.bg_dark{
+    background-color: #2F2F2F;
+}
+.bg_yellow{
+    background-color: #FED136;
+}
+.text_primary{
+    color: #FED136;
+}
+.text_white{
+    color: white;
+}
+.text_center{
+    text-align: center;
+}
+.title{
+    text-align: center;
+}
+.service,
+.about,
+.portfolio{
+    padding: 80px 0;
+}
+.service h1 ,
+.about h1,
+.portfolio h1,
+.contact h1{
+    font-size: 2.5rem;
+}
+.head_image .cover .head_details h5:after,
+.service .title h1:after,
+.about .title h1:after,
+.portfolio .title h1:after,
+.contact .title h1:after {
+    content: "";
+    width: 5%;
+    height: 6px;
+    background-color:#FED136;
+    display: block;
+    margin: 15px auto 15px;
+}
+.service .row,
+.portfolio .row,
+.contact .row {
+    display: flex;
+    margin-top: 50px;
+}
+/*navbar style*/
+.navbar{
+    padding: 15px 0;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+.navbar .nav-items{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .nav-items .logo a{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.navbar .nav-items .links ul li{
+    display: inline-block;
+    text-transform: capitalize;
+    font-family: "Arial Narrow";
+    padding: 0 10px;
+}
+.navbar .nav-items .links ul li:hover a{
+    color: #FED136;
+}
+.head_image{
+    width: 100%;
+    height:560px;
+    background-image: url("../images/header/heared.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.head_image .cover{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 560px;
+}
+.head_image .cover .head_details{
+    height: 560px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.head_image .cover .head_details h5{
+    word-spacing: 8px;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.head_image .cover .head_details h5:after{
+    width: 23%;
+}
+.head_image .cover .head_details h1{
+    word-spacing: 8px;
+    font-size: 3rem;
+    padding: 20px 0;
+    font-weight: bolder;
+}
+.head_image .cover .head_details button,
+.about .title button {
+    padding:8px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/*services*/
+.service .row .col{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.service .row .col .icon .fas{
+    padding: 30px;
+    border-radius: 50%;
+}
+.service .row .col h2{
+    margin: 20px 0;
+}
+/*about*/
+.about p{
+    width: 80%;
+    margin: 0 auto;
+}
+.about .title button{
+    padding: 13px 15px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+/*portfolio*/
+.portfolio .container{
+    width: 90%;
+}
+.portfolio .row{
+    flex-wrap: wrap;
+}
+.portfolio .row .col{
+    flex-wrap: wrap;
+    width: 50%;
+}
+.portfolio .row .col img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+/*contact*/
+.contact{
+    padding: 0  0 50px 0;
+}
+.contact .title p{
+    width: 50%;
+    margin: 0 auto;
+}
+.contact .row{
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.contact a{
+    color:#2F2F2F;
+    padding-top: 10px;
+    font-weight: bold;
+    display: block;
+}
+/*footer*/
+footer{
+    padding: 15px 0;
+}
