@@ -34,7 +34,7 @@ a{
      padding: 15px 10px;
      border: 1px solid #af9375;
      background-color: transparent;
-     font-size: 15px;
+     font-size: 1rem;
      cursor: pointer;
      width: 30%;
      margin: 30px auto;
@@ -84,7 +84,7 @@ button:focus {
 .registration h1 {
     font-family: 'KoHo', sans-serif;
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 2.1rem;
     margin-bottom: 20px;
     color: #7d5020;
 }
@@ -125,7 +125,7 @@ header nav .links ul li:last-child{
     padding-right: 0;
 }
 header nav .links ul li a{
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: bold;
 }
 header nav .links ul li:hover a{
@@ -147,10 +147,10 @@ header .head_details h1{
     font-family: 'Junge', serif;
     text-transform: uppercase;
     word-spacing: 8px;
-    font-size: 55px;
+    font-size: 3.5rem;
     padding-bottom: 30px;
     font-style: italic;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 header .head_details button,
 .cafe .right button,
@@ -159,7 +159,7 @@ header .head_details button,
     padding: 15px;
     border: 1px solid white;
     background-color: transparent;
-    font-size: 18px;
+    font-size: 1rem;
     cursor: pointer;
     width: 30%;
     margin: 30px auto;
@@ -241,7 +241,7 @@ header .head_details button:active {
 }
 .cafe .right h1{
     font-family: 'Dancing Script', cursive;
-    font-size: 55px;
+    font-size: 3.5rem;
     padding-bottom: 30px;
 }
 /*products*/
