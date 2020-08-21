@@ -1,0 +1,18 @@
+@charset"UTF-8";
+
+.images .row .col{
+    margin-bottom: 20px;
+}
+.images .row .col img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s linear;
+}
+.images .row .col:nth-child(even):hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.images .row .col:nth-child(odd):hover img{
+    transform: rotate(5deg);
+    cursor: pointer;
+}
