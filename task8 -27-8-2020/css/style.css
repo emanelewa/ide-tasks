@@ -1,0 +1,890 @@
+@charset"UTF-8";
+/*import fonts*/
+@font-face {
+    font-family:VarelaRound-Regular;
+    src: url("../vendors/fonts/VarelaRound-Regular.ttf");
+}
+@font-face {
+    font-family:OpenSans-Regular;
+    src: url("../vendors/fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+    font-family:OpenSans-SemiBold;
+    src: url("../vendors/fonts/OpenSans-SemiBold.ttf");
+}
+/* Main Style */
+html, body{
+    font-family:OpenSans-Regular;
+    background-color: #f8f8f8;
+}
+.container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.btn:focus{
+   outline: 0;
+    box-shadow: none!important;
+}
+/*utilities*/
+.btn-success:not(:disabled):not(.disabled).active,
+.btn-success:not(:disabled):not(.disabled):active,
+.show>.btn-success.dropdown-toggle{
+    background-color:#a5c926;
+    border-color: #a5c926;
+}
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle{
+    background-color:#a5c926;
+    border-color: #a5c926;
+}
+.stuffed_animals,
+.Wooden_Toys,
+.our_story,
+.our_instagram,
+.template,
+.Subscribe,
+footer,
+.all_toys,
+.about_header{
+    margin: 120px 0 0 0;
+}
+
+/*header section*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+header .top_nav,
+footer {
+    background-color:#a5c926;
+    color: white;
+}
+header .top_nav .nav_top_ifo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 31px;
+}
+header .top_nav .nav_top_ifo .address{
+    display: flex;
+    align-items: center;
+}
+header .top_nav .nav_top_ifo .address span{
+    font-size: 0.7rem;
+    margin-right: 15px;
+}
+header .top_nav .nav_top_ifo .address .nav_email{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+header .top_nav .nav_top_ifo .social a{
+    color: white;
+    margin-right: 10px;
+}
+/*navbar*/
+.navbar-expand-lg{
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 0 0px 15px #a7a4a470;
+}
+.navbar-expand-lg .navbar-brand{
+    font-family:VarelaRound-Regular;
+    color: #373737;
+    font-size: 1.4rem;
+    margin-right: 40px;
+}
+.navbar-expand-lg .navbar-nav .nav-item a{
+    color: #111;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    margin-right: 15px;
+}
+.navbar-expand-lg .navbar-nav .nav-item a:hover{
+    text-decoration: underline;
+}
+.navbar-expand-lg .cart a{
+    color: #111;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.navbar-expand-lg .cart .fas{
+    font-size: 1.2rem;
+}
+.navbar-expand-lg .cart .badge-pill{
+    background-color:#a5c926;
+    border-radius: 50%;
+    padding: 5px 7px;
+}
+/*showcase*/
+.showcase{
+    background-image: url("../images/header/header_img.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 602px;
+    padding: 200px 0;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.showcase .showcase_content,
+.template .title {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.showcase .welcome{
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+.showcase .welcome h6,
+.our_instagram .jumbotron h6,
+.our_story .jumbotron h5,
+.template .title h6,
+.about_header .jumbotron h5{
+    color: #a5c926;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.showcase .welcome p,
+.delivery .delivery_info p,
+.about_header .jumbotron h1{
+    color: #111;
+    font-size: 2.5rem;
+    font-family: VarelaRound-Regular;
+    line-height: 3rem;
+}
+.showcase .welcome button,
+.showcase .welcome button:active,
+.our_instagram .jumbotron button,
+.Subscribe .jumbotron .your_email form button,
+.Subscribe .jumbotron .your_email form button:active,
+.template .template_details .template_info button,
+.Find_the_Answer .btn,
+.Find_the_Answer .btn:focus,
+.contact_us .jumbotron .contact_form form button,
+.contact_us .jumbotron .contact_form form button:focus{
+    background-color:#a5c926;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    font-family:OpenSans-SemiBold;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.showcase .welcome button:hover,
+.our_instagram .jumbotron button:hover,
+.Subscribe .jumbotron .your_email form button:hover,
+.template .template_details .template_info button:hover,
+.Find_the_Answer .btn:hover{
+    box-shadow: 0px 6px 5px #ddebad;
+    transform: scale(1.04);
+}
+.showcase .showcase_button{
+    text-align: center;
+    margin: 0 auto;
+}
+.showcase .showcase_button .circle {
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px 25px;
+    cursor: pointer;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px #ababab;
+    position: absolute;
+    bottom: -119px;
+    right: 47%;
+}
+.showcase .showcase_button .circle .egg-shaped{
+    background-color: transparent;
+    border-radius: 40%;
+    padding: 13px 8px;
+    cursor: pointer;
+    border: 2px solid #bbbbbb;
+    margin: 0 auto;
+    position: relative;
+}
+.showcase .showcase_button .circle .egg-shaped .point{
+    background-color: #ababab;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 6px!important;
+    animation-delay: 1s;
+    animation: my_point 1.5s infinite;
+}
+@keyframes my_point {
+    0%{top: 0 ; opacity: 1}
+    50%{top: 20%; opacity: 0.8}
+    75%{top: 40%; opacity: 0.5}
+    100%{top: 70%; opacity: 0}
+}
+/*about us*/
+.about_us{
+    margin: 150px 0 0 0;
+}
+.about_us .all_card{
+    display: flex;
+    justify-content: space-between;
+}
+.about_us .card1{
+    border-radius: 15px;
+    height: 190px;
+    background-color: #ffc12c;
+}
+.about_us .card2{
+    border-radius: 15px;
+    height: 190px;
+    background-color: #fb416b;
+}
+.about_us .card .no-gutters{
+    position: relative;
+}
+.about_us .card .no-gutters .Stuffed{
+    position: absolute;
+    top: -65px;
+}
+.about_us .card .no-gutters .card_info1{
+    position: absolute;
+    right:20px;
+    top: 35px;
+}
+.about_us .card .no-gutters .card_info2{
+    position: absolute;
+    left:100px;
+    top: 15px;
+}
+.about_us .card .no-gutters .Wooden{
+    position: absolute;
+    top: -65px;
+    right: 20px;
+}
+.about_us .card .no-gutters .card_info1 h5,
+.about_us .card .no-gutters .card_info2 h5 {
+    color: white;
+    font-family:VarelaRound-Regular;
+    font-size: 1.8rem;
+}
+.about_us .card .no-gutters .card_info1 .btn,
+.about_us .card .no-gutters .card_info2 .btn {
+    background-color: white;
+    padding: 10px 23px;
+    border-radius: 50px;
+    color: #111;
+    outline: 0;
+    border: 0;
+    font-size: 14px;
+    font-family:OpenSans-SemiBold;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.about_us .card .no-gutters .card_info1 .btn:hover {
+    box-shadow: 0px 6px 5px #dfa927;
+    transform: scale(1.04);
+}
+.about_us .card .no-gutters .card_info2 .btn:hover{
+    box-shadow: 0px 6px 5px #cd375c;
+    transform: scale(1.04);
+}
+/*stuffed_animals*/
+.stuffed_animals .jumbotron,
+.Wooden_Toys .jumbotron,
+.our_story .jumbotron,
+.our_instagram .jumbotron ,
+.all_toys .jumbotron,
+.about_header .jumbotron {
+    padding: 0;
+    background-color: transparent;
+    text-align: center;
+}
+.stuffed_animals .jumbotron h3,
+.Wooden_Toys .jumbotron h3,
+.our_instagram .jumbotron h3,
+.our_story .jumbotron h1,
+.template .title h3,
+.Subscribe .jumbotron .Subscribe_info .Subscribe_paragraph p,
+.template .template_details .template_info h1,
+.all_toys .jumbotron h3,
+.delivery .delivery_info h1,
+.contact_us .jumbotron .contact_form h1,
+.contact_us .jumbotron .contact_form .contact_address h1 {
+    color: #111;
+    font-family:VarelaRound-Regular;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    float: left;
+}
+.stuffed_animals .jumbotron .see_more,
+.Wooden_Toys .jumbotron .see_more {
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 3px;
+}
+.stuffed_animals .jumbotron .see_more:hover,
+.Wooden_Toys .jumbotron .see_more:hover {
+    border-bottom: 2px solid #a5c926;
+    transition: border-bottom-color 0.5s ease;
+}
+.stuffed_animals .jumbotron .see_more a,
+.Wooden_Toys .jumbotron .see_more a,
+.all_toys .jumbotron .see_more a,
+.next_template_details a,
+.about_header .see_more a,
+.contact_us .jumbotron .contact_form .contact_address .see_more a {
+    color: #111;
+    font-family:VarelaRound-Regular;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-decoration: none;
+}
+.Wooden_Toys .jumbotron .see_more .fas{
+    margin-left: 5px;
+}
+.stuffed_animals .stuffed_animals_line,
+.Wooden_Toys .stuffed_animals_line,
+.all_toys .all_toys_line {
+    width: 100%;
+    height: 2px;
+    background-color:#e5e5e5;
+    margin-top: 20px;
+}
+.stuffed_animals .stuffed_animals_line .green_line,
+.Wooden_Toys .stuffed_animals_line .green_line,
+.all_toys .all_toys_line .green_line {
+    width: 10%;
+    height: 2px;
+    background-color:#a5c926;
+}
+.allstuffed_image .card,
+.allwooden_image .card,
+.instagram_image .card,
+.all_toys_image .card {
+    text-align: center;
+    margin-top: 50px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px #e5e9ed;
+    padding: 30px 30px 20px 30px ;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.allstuffed_image .card:hover,
+.allwooden_image .card:hover,
+.instagram_image .card:hover,
+.all_toys_image .card:hover {
+    box-shadow: 0px 6px 5px #d3d7db;
+    transform: scale(1.04);
+}
+.allstuffed_image .card img,
+.allwooden_image .card img,
+.all_toys_image .card img {
+    width: 90%;
+    margin: 0 auto;
+}
+.allstuffed_image .card h5,
+.allwooden_image .card h5,
+.all_toys_image .card h5{
+    color: #111;
+    font-family:OpenSans-Regular;
+    font-size:1rem;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.allstuffed_image .card .btn,
+.allstuffed_image .card .btn:focus,
+.allwooden_image .card .btn,
+.allwooden_image .card .btn:focus,
+.all_toys_image .card .btn,
+.all_toys_image .card .btn:focus {
+    background-color:#a5c926;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 4px 10px;
+    font-family:OpenSans-SemiBold;
+    text-transform: capitalize;
+    font-size: 0.7rem;
+}
+/*our_story*/
+.our_story{
+    background-image: url("../images/our_story/bear.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 460px;
+    background-attachment: fixed;
+}
+.our_story{
+    color: white;
+    position: relative;
+}
+.our_story .cover{
+   position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.our_story .jumbotron h5{
+    color: white;
+}
+.our_story .jumbotron h1{
+    float: none;
+    color: white;
+    font-size: 2.3rem;
+    margin-top: 20px;
+}
+.our_story .jumbotron p
+.about_header .jumbotron p{
+    font-family:OpenSans-Regular;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+.our_story .jumbotron .btn_modal,
+.Subscribe .jumbotron .Subscribe_info .Subscribe_icon,
+.our_story .jumbotron .btn_modal:focus {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    background-color:#a5c926;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+.our_story .jumbotron .btn_modal:hover{
+    transform: scale(1.04);
+}
+.our_story .jumbotron .btn_modal .fas{
+    color: white;
+    margin-left: 5px;
+}
+.modal .modal-dialog .modal-body{
+    padding: 0;
+}
+.modal-content{
+    background-color: transparent!important;
+    border: none!important;
+}
+.modal-content video{
+    border: none;
+    outline: none;
+}
+.our_story .jumbotron .exampleModal{
+    padding: 0;
+}
+/*template*/
+.template .title{
+    margin-bottom: 100px;
+}
+.template .title h3{
+    float: none!important;
+    margin-top: 15px;
+    font-size: 2rem;
+}
+.template .template_details .template_info{
+    width: 100%;
+    margin-top: 100px;
+}
+.template .template_details .template_info h1{
+    font-size: 2rem;
+    float: none;
+    position: relative;
+}
+.template .template_details .template_info h1:after{
+    content: "";
+    width: 12%;
+    height: 2px;
+    background-color:#a5c926;
+    position: absolute;
+    left: 0;
+    top: 70px;
+}
+.template .template_details .template_info p{
+    color: #999;
+    font-size: 0.9rem;
+    width: 80%;
+    line-height: 23px;
+    margin-top: 60px;
+}
+.template .template_details .template_info button {
+    background-color: #a5c926;
+    padding: 12px 31px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.template .template_details .template_image{
+    width: 100%;
+    height: 450px;
+}
+.template .template_details .template_image img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+/*Subscribe*/
+.Subscribe .jumbotron,
+.delivery .jumbotron,
+.contact_us .jumbotron
+{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px #e5e9ed;
+    padding: 45px 50px;
+}
+.Subscribe .jumbotron .Subscribe_info .Subscribe_paragraph p,
+.Find_the_Answer h3 {
+    float: none;
+    font-size: 1.5rem;
+    font-family:VarelaRound-Regular;
+    text-transform: initial;
+}
+.Subscribe .jumbotron .Subscribe_info .Subscribe_paragraph p span{
+    color: #a5c926;
+}
+.Subscribe .jumbotron .Subscribe_info .Subscribe_icon{
+    transition: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.Subscribe .jumbotron .your_email{
+    width: 100%;
+    margin-top: 20px;
+}
+.Subscribe .jumbotron .your_email form input,
+.contact_us .jumbotron .contact_form form input{
+    width: 100%;
+    border-radius: 50px;
+    border: 2px solid #e5e5e5;
+    background-color: #f8f8f8;
+    padding: 20px 20px;
+    height: 50px;
+    transition: background-color 0.4s ease;
+}
+.Subscribe .jumbotron .your_email form input:hover,
+.contact_us .jumbotron .contact_form form input:hover,
+.contact_us .jumbotron .contact_form form textarea:hover {
+    background-color: white;
+}
+.Subscribe .jumbotron .your_email form input::placeholder,
+.contact_us .jumbotron .contact_form form input::placeholder,
+.contact_us .jumbotron .contact_form form textarea::placeholder {
+    font-size: 14px;
+    color: #9d9d9d;;
+}
+.Subscribe .jumbotron .your_email form input:focus,
+.contact_us .jumbotron .contact_form form input:focus,
+.contact_us .jumbotron .contact_form form textarea:focus {
+    border: 2px solid #a5c926;
+    outline: none;
+    box-shadow: none;
+}
+/*.our_instagram*/
+.our_instagram .jumbotron h3{
+   float: none!important;
+   font-size: 1.9rem;
+}
+.our_instagram .jumbotron .instagram_image{
+    margin: 30px 0 70px 0  ;
+}
+.instagram_image .card {
+    padding: 0;
+}
+.instagram_image .card img{
+border-radius: 15px;
+}
+/*footer*/
+footer .top_footer{
+    padding: 50px 0;
+    border-bottom: 1px solid #d8e8c0;
+}
+footer .top_footer a,
+footer .bottom_footer a,
+.contact_us .jumbotron .contact_form .contact_address .follow_us .social a{
+    color: white;
+}
+footer .top_footer .logo_footer a{
+    font-size: 1.5rem;
+    font-family:VarelaRound-Regular;
+}
+footer .top_footer .logo_footer a:hover{
+    text-decoration: none;
+}
+footer .top_footer .menu a{
+    margin-right: 20px;
+    font-size: 0.9rem;
+    text-transform:capitalize ;
+}
+footer .top_footer .social a{
+    margin-right: 20px;
+}
+footer .bottom_footer{
+    padding: 20px 0 10px 0;
+}
+footer .bottom_footer .bottom_link a{
+    font-size: 0.7rem;
+    margin-right: 15px;
+}
+footer .bottom_footer .bottom_link{
+    display: flex;
+    text-decoration: underline;
+}
+footer .bottom_footer .bottom_link .footer_point{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color:#d8e8c0;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+footer .bottom_footer .bottom_footer_text p{
+    font-size: 0.7rem;
+}
+footer .bottom_footer .bottom_footer_text p span{
+    text-decoration: underline;
+}
+
+/****************************catalog page*****************************/
+/*all toys*/
+.top_breadcrumb{
+    margin-top: 150px;
+}
+.top_breadcrumb .breadcrumb{
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid #e5e5e5;
+    padding: 0.6rem 1.5rem;
+}
+.top_breadcrumb .breadcrumb .breadcrumb-item a,
+.top_breadcrumb .breadcrumb .active{
+    color: #999;
+    font-size: 0.8rem;
+    line-height: 26px;
+}
+.breadcrumb-item+.breadcrumb-item{
+    padding-left: 0.3rem;
+}
+.top_breadcrumb .breadcrumb .breadcrumb-item a:hover{
+    text-decoration: underline;
+}
+.top_breadcrumb .breadcrumb .breadcrumb-item .fas{
+    color: #cccccc;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 13px;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    content:none!important;
+}
+.all_toys .jumbotron .see_more a{
+     font-weight: normal;
+     margin-right: 20px;
+ }
+
+.all_toys .jumbotron .see_more a:first-child{
+    background-color:#a5c926;
+    border-radius: 50px;
+    color: white;
+    padding: 7px 15px;
+    text-decoration: none!important;
+}
+.all_toys .jumbotron .see_more a:hover{
+    text-decoration: underline;
+}
+/*******************************delivery page***********************************************/
+/*delivery*/
+.delivery{
+    margin-top: 50px;
+}
+.delivery .jumbotron_delivery,
+.contact_us .jumbotron {
+    padding: 80px;
+}
+.delivery .delivery_info h1{
+    float: none;
+    margin-bottom: 17px;
+    font-size: 1.9rem;
+}
+.delivery .delivery_info .medium_title{
+    font-size: 1.8rem;
+}
+.delivery .delivery_info .small_title{
+    font-size: 1.4rem;
+}
+.delivery .delivery_info p,
+.delivery .delivery_info li,
+.contact_us .jumbotron .contact_form .contact_address p {
+    font-size: 0.9rem;
+    line-height: 24px;
+    font-family:OpenSans-Regular;
+    width: 90%;
+    margin-bottom: 30px;
+}
+.delivery .delivery_info li{
+    line-height:0;
+    margin-bottom: 25px;
+}
+.delivery .delivery_info ul{
+    margin-top: 40px;
+}
+.Find_the_Answer .jumbotron{
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #e5e5e5;
+    text-align: center;
+}
+.Find_the_Answer h3{
+    font-size: 1.1rem;
+    font-family:VarelaRound-Regular;
+}
+.Find_the_Answer .btn,
+.Find_the_Answer .btn:focus {
+    background-color:#a5c926;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+/*************************************** about page ********************************/
+/*Template */
+.about_header .jumbotron p{
+    font-size: 0.9rem;
+    color: #999999;
+    width: 50%;
+    margin: 0 auto 50px;
+    padding-top:15px;
+}
+.next_template_details{
+    margin-top: 120px;
+}
+.next_template_details .template_info{
+    margin-left: 100px;
+}
+.next_template_details .template_info .see_more{
+    margin-top: 30px;
+}
+.next_template_details .template_info .fas{
+    margin-left: 5px;
+}
+.next_template_details .template_info a,
+.about_header .see_more a,
+.contact_us .jumbotron .contact_form .contact_address .see_more a{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e5e5e5;
+    font-weight: normal;
+}
+.next_template_details .template_info a:hover,
+.about_header .see_more a:hover,
+.contact_us .jumbotron .contact_form .contact_address .see_more a:hover {
+    border-bottom: 2px solid #a5c926;
+    transition: border-bottom-color 0.5s ease;
+}
+.about_header .jumbotron .about_header_image{
+    margin-top: 70px;
+    border-radius: 15px;
+}
+.about_header .jumbotron .about_header_image img{
+    border-radius: 15px;
+}
+/*******************************contact us ******************************/
+/*contact_us*/
+.contact_us{
+    margin-top:50px;
+}
+.contact_us .jumbotron .map{
+    width: 100%;
+    height: 450px;
+}
+.contact_us .jumbotron .contact_form{
+    margin-top: 70px;
+}
+.contact_us .jumbotron .contact_form h1{
+    float: none;
+    font-size: 1.5rem;
+}
+.contact_us .jumbotron .contact_form form{
+    margin-top: 30px;
+}
+.contact_us .jumbotron .contact_form form label{
+    font-family:OpenSans-Regular;
+    color: #111111;
+    font-size: 0.8rem;
+}
+.contact_us .jumbotron .contact_form form textarea {
+    background-color: #f8f8f8;
+    border: 2px solid #e5e5e5;
+    border-radius: 20px;
+    padding: 20px;
+}
+.contact_us .jumbotron .contact_form .contact_address{
+    padding-left: 150px;
+}
+.contact_us .jumbotron .contact_form .contact_address h1{
+    float: none;
+    font-size: 1.5rem;
+}
+.contact_us .jumbotron .contact_form .contact_address p{
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+.contact_us .jumbotron .contact_form .contact_address .see_more a{
+    font-weight: bold;
+    padding-bottom: 4px;
+    font-family:OpenSans-Regular;
+}
+.contact_us .jumbotron .contact_form .contact_address .follow_us{
+    margin-top: 60px;
+}
+.contact_us .jumbotron .contact_form .contact_address .follow_us h5{
+    font-family:VarelaRound-Regular;
+    font-size: 1.1rem;
+}
+.contact_us .jumbotron .contact_form .contact_address .follow_us .social{
+    margin-top: 25px;
+}
+.contact_us .jumbotron .contact_form .contact_address .follow_us .social a{
+    padding: 7px 10px;
+    background-color:#2aa3f0 ;
+    border-radius: 50%;
+    font-size: 0.8rem;
+}
+.contact_us .jumbotron .contact_form .contact_address .follow_us .social a:nth-child(2){
+    background-color: #3b5998;
+}
+.contact_us .jumbotron .contact_form .contact_address .follow_us .social a:nth-child(3){
+    background-color: #fb416b;
+}
+.contact_us .jumbotron .contact_form .contact_address .follow_us .social a:nth-child(4){
+    background-color: #bd081c;
+}
+.contact_us .jumbotron .contact_form .contact_address .follow_us .social a:nth-child(5){
+    background-color: #fc0d1c;
+}

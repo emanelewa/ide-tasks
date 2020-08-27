@@ -1,0 +1,380 @@
+@charset"UTF-8";
+/*reset*/
+@font-face {
+    font-family:Poppins-Bold ;
+    src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family:Poppins-Regular ;
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family:Poppins-Light ;
+    src: url("../fonts/Poppins-Light.ttf");
+}
+*,
+*:after,
+*:before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*main style*/
+body, html{
+    line-height: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a,li{
+    text-decoration: none;
+    font-family: Poppins-Regular;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+ p{
+     font-family:Poppins-Light ;
+     font-weight: normal;
+     margin-top: 10px;
+     color: #252525;
+     font-size: 16px;
+}
+ button{
+     font-family:Poppins-Regular ;
+     padding: 15px 10px;
+     background-color: #252525;
+     font-size: 1rem;
+     border: none;
+     cursor: pointer;
+     width: 30%;
+     margin-top: 30px;
+     color: white;
+     text-transform: capitalize;
+     transition: background-color 0.5s ease;
+ }
+button:hover,
+button:focus {
+    background-color: #f76d37;
+    outline: none;
+    border: none;
+}
+/*utility classes*/
+.bg_primary{
+    background-color: #252525;
+}
+.text_primary{
+    color: #f76d37;
+}
+.text_secondary{
+    color: #252525;
+}
+.text_white{
+    color: white;
+}
+.text_center{
+    text-align: center;
+}
+.about,
+.gallery,
+.services,
+.contact {
+    padding: 100px 0;
+}
+.about .title,
+.gallery .title{
+    text-align: center;
+}
+.about h1,
+.gallery h1,
+.services,
+.contact {
+    color: #f76d37;
+    font-family:Poppins-Bold ;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+ .row {
+    display: flex;
+     flex-wrap: wrap;
+}
+/*header style*/
+header{
+    width: 100%;
+    height: 650px;
+}
+header nav{
+    padding: 20px 0;
+}
+header nav .container{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+header nav .navbar_brand{
+    padding-top: 10px;
+}
+header nav .navbar_brand a{
+    font-family:Poppins-Bold ;
+    font-size: 2.5rem;
+}
+header nav .links ul .active a{
+    color: #f76d37;
+}
+header nav .links ul li{
+    display: inline-block;
+    padding: 10px 7px;
+}
+header nav .links ul li:last-child{
+    padding-right: 0;
+}
+header nav .links ul li a{
+    font-size: 1.1rem;
+}
+header nav .links ul li:hover a{
+    color: #f76d37;
+}
+header .head_details{
+    background-image: url("../images/header/banner-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover ;
+    width: 100%;
+    height: 550px;
+}
+header .head_details .info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    padding-top: 120px;
+}
+header .head_details .info h2{
+    color: #252525;
+    text-transform: capitalize;
+    font-family: Poppins-Regular;
+    font-size: 3.7rem;
+    padding-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+header .head_details .info h1{
+    color: white;
+    text-transform: capitalize;
+    font-family:Poppins-Bold ;
+    font-size: 4.5rem;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+header .head_details .arrows{
+    width: 100%;
+    text-align: center;
+}
+header .head_details .arrows .fas {
+    background-color: white;
+    padding: 15px 18px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-right: 10px;
+    cursor: pointer;
+}
+header .head_details .arrows .fas:last-child {
+    background-color: #f76d37;
+}
+/*about*/
+.about .col{
+    width: 50%;
+}
+.about .col h1{
+    padding-top: 120px;
+}
+.about .col img{
+    width: 100%;
+}
+/*services*/
+.services .col{
+    width: 50%;
+}
+.services .left,
+.services .right {
+    display: flex;
+    margin-bottom: 50px;
+    border-bottom: 1px dashed #e8e8e8;
+    padding-bottom: 20px;
+}
+.services .left .left_text{
+    padding-right: 20px;
+}
+.services .left .left_text p{
+    text-align: right;
+    width: 100%;
+}
+.services .left .left_text h4,
+.services .right .right_text h4 {
+    font-family: 'KoHo', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.services .right .right_text{
+    padding-left: 20px;
+}
+.services .right .right_text p{
+    text-align: left;
+    width: 100%;
+}
+.services .right .right_text h4{
+    text-align: left;
+}
+/*gallery*/
+.gallery .row .col{
+
+}
+/*registration*/
+.registration{
+    background-image: url("../images/registration/reg1.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.registration .title{
+    padding-top: 80px;
+}
+.registration .title h1{
+    color: white!important;
+}
+.registration .cover{
+    position: absolute;
+    background-color: rgba(0,0,0,.2);
+    width: 100%;
+    height: 100%;
+}
+.registration .content{
+    display: flex;
+}
+.registration .reg_left{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.registration .reg_left .pic1,
+.registration .reg_left .pic2,
+.registration .reg_left .pic3,
+.registration .reg_left .pic4 {
+    background-color: rgba(255,255,255,.8);
+    width: 42%;
+    height: 180px;
+    padding: 30px 30px 20px 30px;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid #be9c79;
+}
+.registration .reg_left .pic1:hover a,
+.registration .reg_left .pic2:hover a,
+.registration .reg_left .pic3:hover a,
+.registration .reg_left .pic4:hover a {
+    display: block;
+}
+.registration .reg_left .pic1 a,
+.registration .reg_left .pic2 a,
+.registration .reg_left .pic3 a,
+.registration .reg_left .pic4 a {
+    width: 100%;
+    display: none;
+    font-size: 1.3rem;
+    color: #7d5020;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.registration .reg_form{
+    width: 50%;
+    margin-top: 70px;
+    padding: 20px 20px 5px 20px;
+    box-shadow: 1px 1px 5px black;
+    height: 400px;
+}
+.registration .reg_form form input[type="text"],
+.registration .reg_form form input[type="email"],
+.registration .reg_form form input[type="number"],
+.registration .reg_form form input[type="password"],
+.registration .reg_form form textarea{
+    width: 100%;
+    padding: 10px 15px;
+    border:3px solid #be9c79;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.registration .reg_form form input::placeholder,
+.registration .reg_form form textarea::placeholder{
+    color:#be9c79;
+    font-size: 15px;
+    font-family: 'KoHo', sans-serif;
+}
+.registration .reg_form form input:focus,
+.registration .reg_form form textarea:focus {
+    outline: none;
+    border:3px solid #089eab;
+}
+.registration .reg_form h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.registration .reg_form form button{
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.registration .reg_form form button:hover,
+.registration .reg_form form button:active {
+    background-color: white;
+    color:#085c69;
+}
+/*contact*/
+.contact{
+    background-color: #05414a;
+}
+.contact .row{
+    margin-top: 0;
+}
+.contact .col{
+    width: 25%;
+    margin-left: 50px;
+}
+.contact .col:first-child{
+    margin-left:0;
+}
+.contact .col p{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.col h2{
+    margin-bottom: 25px;
+}
+.col .social{
+    margin-top: 20px;
+}
+.col .social a{
+    margin-right: 10px;
+}
+footer{
+    padding: 10px 0;
+    font-family: "Arial Narrow";
+    background-color: #f4f4f4;
+}
+footer .fas{
+    color:#05414a;
+}
