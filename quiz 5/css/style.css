@@ -23,30 +23,49 @@ html, body{
     border: none;
 }
 /*utilities*/
-.features{
-    margin: 100px 0;
+.features,
+.technical,
+.testimonials{
+    margin: 80px 0;
 }
-.features .title{
+.technical .jumbotron,
+.testimonials .jumbotron{
+    background-color: transparent;
+}
+.features .title,
+.technical .title,
+.testimonials .title{
     text-align: center;
     color: #0a1f44;
 }
-.features .title h6{
+.features .title h6,
+.technical .title h6{
     color:#E01705;
     font-size: 0.8rem;
     font-family:VarelaRound-Regular;
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-.features .title h2{
+.features .title h2,
+.technical .title h2,
+.testimonials .title h2,
+.testimonials .jumbotron .box h5{
     font-family:OpenSans-ExtraBold;
     color:#0a1f44;
     text-transform: capitalize;
-    line-height: 1.3rem;
-    margin-bottom: 25px;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
 }
-.features .title h2 span{
-    color: #E01705;;
+.features .title h2 span,
+.technical .title h2 span{
+    color: #E01705;
+}
+.features .title p,
+.technical .title p,
+.testimonials .title p{
+    width: 50%;
+    margin: 0 auto;
 }
 p, button{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -113,7 +132,8 @@ header{
 .showcase .showcase_info h1 span{
     color: #E01705;
 }
-.showcase .showcase_info p{
+.showcase .showcase_info p,
+.testimonials .jumbotron .box h6{
     color: #103a88;
     font-size: 14px;
     width: 60%;
@@ -174,11 +194,9 @@ header{
     }
 }
 /**features area**/
-.features .title p{
-    width: 50%;
-    margin: 0 auto;
-}
-.features .features_content{
+.features .features_content,
+.technical .technical_content,
+.testimonials .jumbotron .testimonials_content {
     margin-top: 100px;
 }
 .features .features_content .left,
@@ -189,7 +207,8 @@ header{
     margin-right: 20px;
 }
 .features .features_content .left h4,
-.features .features_content .right h4{
+.features .features_content .right h4,
+.technical .technical_content .right .block h4{
     color: #0a1f44;
     font-family:VarelaRound-Regular;
     text-transform: capitalize;
@@ -197,12 +216,14 @@ header{
     font-weight: bold;
 }
 .features .features_content .left p,
-.features .features_content .right p{
+.features .features_content .right p,
+.testimonials .jumbotron .box p{
     font-size: 0.8rem;
     text-align: justify;
 }
 .features .features_content .left .left_img .fas,
-.features .features_content .right .right_img .fas{
+.features .features_content .right .right_img .fas,
+.technical .technical_content .right .block .fas{
     padding: 14px 15px;
     border-radius: 50%;
     border: 1px solid #E01705;
@@ -216,6 +237,86 @@ header{
 .features .features_content .middle .embed-responsive{
     width: 75%!important;
     margin: 0 auto!important;
+}
+/*technical*/
+.technical{
+    background-color: white;
+}
+.technical .technical_content .right{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.technical .technical_content .right .block,
+.testimonials .jumbotron .box {
+    width: 200px;
+    height: 250px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.technical .technical_content .right .block h4{
+    margin-top: 15px;
+    line-height: 1.5rem;
+}
+.technical .technical_content .embed-responsive{
+    width: 55%!important;
+    margin: 0 auto!important;
+}
+/*testimonials*/
+.testimonials .jumbotron{
+    padding-top: 0;
+}
+.testimonials .jumbotron .box{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    height: 330px;
+}
+.testimonials .jumbotron .box .top_img>img{
+    width: 22%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: -35px;
+    left: 38%;
+}
+.testimonials .jumbotron .box span{
+    color:#ffc107;
+    margin-top: 27px;
+    font-size:0.5rem;
+}
+.testimonials .jumbotron .box h5{
+    font-size: 0.8rem;
+    margin-top: 5px;
+    line-height: 0.6rem;
+    margin-bottom: 0;
+    font-family:VarelaRound-Regular;
+    font-weight: bold;
+}
+.testimonials .jumbotron .box h6{
+    width: 100%;
+    color: #103a88;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.testimonials .jumbotron .box p{
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+.testimonials .jumbotron .testimonials_content .box .bottom_img{
+    text-align: center;
+    width: 22%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -17px;
+    left: 38%;
 }
 
 
