@@ -1,0 +1,617 @@
+@charset"UTF-8";
+/*import fonts*/
+@font-face {
+    font-family:VarelaRound-Regular;
+    src: url("../vendors/fonts/VarelaRound-Regular.ttf");
+}
+@font-face {
+    font-family:OpenSans-ExtraBold;
+    src: url("../vendors/fonts/OpenSans-ExtraBold.ttf");
+}
+/* Main Style */
+html, body{
+    font-family:OpenSans-Regular;
+    background-color: #f8f8f8;
+}
+.btn:focus{
+   outline: 0;
+    box-shadow: none!important;
+}
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+    color: white;
+    background-color: #E01705;
+    border: none;
+}
+/*utilities*/
+.features,
+.technical,
+.testimonials,
+.pricing,
+.question
+{
+    margin: 80px 0;
+}
+.technical .jumbotron,
+.testimonials .jumbotron,
+.pricing .jumbotron,
+.question .jumbotron{
+    background-color: transparent!important;
+}
+.features .title,
+.technical .title,
+.testimonials .title,
+.pricing .title,
+.question .title,
+.contact_us .jumbotron .Leave_Message,
+.save .title
+{
+    text-align: center;
+    color: #0a1f44;
+}
+.features .title h6,
+.technical .title h6{
+    color:#E01705;
+    font-size: 0.8rem;
+    font-family:VarelaRound-Regular;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.features .title h2,
+.technical .title h2,
+.testimonials .title h2,
+.testimonials .jumbotron .box h5,
+.pricing .title h2,
+.question .title h2,
+.save .title h2
+{
+    font-family:OpenSans-ExtraBold;
+    color:#0a1f44;
+    text-transform: capitalize;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+}
+.features .title h2 span,
+.technical .title h2 span{
+    color: #E01705;
+}
+.features .title p,
+.technical .title p,
+.testimonials .title p,
+.pricing .title p,
+.save .title p
+{
+    width: 50%;
+    margin: 0 auto;
+}
+p, button{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #103a88;
+    font-size: 0.9rem;
+}
+/*top_bar*/
+.top_bar{
+    background-color: #0a1f44;
+    padding: 8px 0 2px 0;
+    text-align: center;
+    display: flex;
+    color: white;
+}
+.top_bar img{
+    width:0.99%;
+}
+.top_bar p{
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+}
+.top_bar button{
+    text-transform: uppercase;
+    background-color: #E01705;
+    font-size: 14px;
+    padding: .375rem 1rem;
+}
+/*header section*/
+header{
+    background-color: white;
+}
+.navbar-expand-md{
+    padding: 10px 0;
+}
+.navbar-expand-md .navbar-nav .nav-item a,
+.top_footer .navbar-nav li a
+{
+    color: #0a1f44;
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-right: 5px;
+    float: right;
+    font-family:VarelaRound-Regular;
+}
+/*media query*/
+@media (min-width: 576px) and (max-width: 767.98px){
+    .navbar-expand-md .navbar-nav{
+        text-align: center;
+    }
+}
+/*showcase*/
+.showcase{
+    background-color: white;
+    height: auto;
+    padding: 100px 0;
+    width: 100%;
+}
+.showcase .showcase_info{
+    margin-top: 100px;
+}
+.showcase .showcase_info h1{
+    font-family:OpenSans-ExtraBold;
+    color: #0a1f44;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.showcase .showcase_info h1 span{
+    color: #E01705;
+}
+.showcase .showcase_info p,
+.testimonials .jumbotron .box h6{
+    color: #103a88;
+    font-size: 14px;
+    width: 60%;
+    margin-top: 10px;
+}
+.showcase .showcase_info a,
+.save .title button
+{
+    color: white;
+    font-family:VarelaRound-Regular;
+    border-radius: 50px;
+    background-color:#E01705;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-size: 0.7rem;
+    padding: 10px 20px;
+    margin-right: 5px;
+}
+.showcase .showcase_info a:first-child:active{
+    background-color:#E01705;
+}
+.showcase .showcase_info a:last-child{
+    background-color:#0a1f44;
+}
+.showcase .showcase_info a:last-child:active{
+    background-color:#0a1f44;
+    color: white;
+}
+/*media query*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .showcase .showcase_info{
+        text-align: center;
+        margin-bottom:100px;
+    }
+    .showcase .showcase_info p{
+        margin: 0 auto;
+    }
+    .showcase_img .img{
+        margin: 0 auto;
+        display: block;
+    }
+    .showcase{
+        padding-bottom: 0!important;
+    }
+}
+@media (max-width: 575.98px) {
+    .showcase .showcase_info{
+        text-align: center;
+        margin-bottom:100px;
+    }
+    .showcase .showcase_info p{
+        margin: 0 auto;
+    }
+    .showcase_img .img{
+        margin: 0 auto;
+        display: block;
+    }
+    .showcase{
+        padding-bottom: 0!important;
+    }
+}
+/**features area**/
+.features .features_content,
+.technical .technical_content,
+.testimonials .jumbotron .testimonials_content,
+.pricing .jumbotron .pricing_content,
+.question .jumbotron .content_question
+{
+    margin-top: 100px;
+}
+.features .features_content .left,
+.features .features_content .right {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.features .features_content .left h4,
+.features .features_content .right h4,
+.technical .technical_content .right .block h4,
+.pricing .jumbotron .pricing_content .free_shipping,
+.question .jumbotron .left_question h2,
+.question .jumbotron .right_question h2,
+.contact_us .jumbotron .contact_address h1,
+.contact_us .jumbotron .Leave_Message h1,
+.contact_us .jumbotron .contact_address .collaborate h6
+
+{
+    color: #0a1f44;
+    font-family:VarelaRound-Regular;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.features .features_content .left p,
+.features .features_content .right p,
+.testimonials .jumbotron .box p{
+    font-size: 0.8rem;
+    text-align: justify;
+}
+.features .features_content .left .left_img .fas,
+.features .features_content .right .right_img .fas,
+.technical .technical_content .right .block .fas{
+    padding: 14px 15px;
+    border-radius: 50%;
+    border: 1px solid #E01705;
+    color: #E01705;
+    font-size: 1.1rem;
+    background-color: white;
+}
+.features .features_content .left .middle{
+    border: 1px solid red;
+}
+.features .features_content .middle .embed-responsive{
+    width: 75%!important;
+    margin: 0 auto!important;
+}
+/*technical*/
+.technical,
+.pricing,
+.question{
+    background-color: white;
+}
+.technical .technical_content .right{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.technical .technical_content .right .block,
+.testimonials .jumbotron .box {
+    width: 200px;
+    height: 250px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.technical .technical_content .right .block h4,
+.question .left_question h2{
+    margin-top: 15px;
+    line-height: 1.5rem;
+}
+.technical .technical_content .embed-responsive{
+    width: 55%!important;
+    margin: 0 auto!important;
+}
+/*testimonials*/
+.testimonials .jumbotron{
+    padding-top: 0;
+}
+.testimonials .jumbotron .box{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    height: 330px;
+}
+.testimonials .jumbotron .box .top_img>img
+{
+    width: 24%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: -44px;
+    left: 37%;
+}
+.testimonials .jumbotron .box span,
+.pricing .jumbotron .pricing_content span
+{
+    color:#ffc107;
+    margin-top: 27px;
+    font-size:0.5rem;
+}
+.testimonials .jumbotron .box h5{
+    font-size: 0.8rem;
+    margin-top: 5px;
+    line-height: 0.6rem;
+    margin-bottom: 0;
+    font-family:VarelaRound-Regular;
+    font-weight: bold;
+}
+.testimonials .jumbotron .box h6{
+    width: 100%;
+    color: #103a88;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.testimonials .jumbotron .box p{
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+.testimonials .jumbotron .testimonials_content .box .bottom_img,
+.pricing .jumbotron .pricing_content .customer .bottom_img
+{
+    text-align: center;
+    position: absolute;
+    bottom: -17px;
+    left: 43%;
+}
+.testimonials .jumbotron .testimonials_content .box .bottom_img .fas,
+.pricing .jumbotron .pricing_content .customer .bottom_img .fas
+{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    background-color: #E01705;
+    padding: 12px 13px;
+    color: white;
+}
+/*pricing*/
+.pricing{
+    margin-bottom: 0;
+}
+.pricing .jumbotron {
+    margin-bottom: 0;
+}
+.pricing .jumbotron .title h2{
+    text-transform: uppercase;
+}
+.pricing .jumbotron .pricing_content{
+    border: 2px solid #E01705;
+    height: 645px;
+}
+.pricing .jumbotron .pricing_content .customer{
+    background-color: #E01705;
+    padding: 20px 30px;
+    text-align: center;
+    color: white;
+    height: 643px;
+}
+.pricing .jumbotron .pricing_content img{
+    width: 11%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.pricing .jumbotron .pricing_content h5{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+.pricing .jumbotron .pricing_content h6{
+    margin-bottom: 0;
+    color: #ffddc5;
+}
+.pricing .jumbotron .pricing_content p{
+    color: white;
+    padding-top: 20px;
+}
+.pricing .jumbotron .pricing_content span{
+    font-size:0.8rem;
+    margin-top: 0;
+}
+.pricing .jumbotron .pricing_content .customer .bottom_img .fas{
+    border: 2px solid white;
+}
+.pricing .jumbotron .pricing_content .customer .bottom_img{
+    left: 45%;
+}
+.pricing .jumbotron .pricing_content .customer .customer_details{
+    margin-top: 30%;
+}
+.pricing .jumbotron .pricing_content .free_shipping{
+    text-align: center;
+    color: #0a1f44;
+    padding: 10px 30px;
+    margin-top: 13%;
+}
+.pricing .jumbotron .pricing_content .free_shipping h4{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.pricing .jumbotron .pricing_content .free_shipping .final_discount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pricing .jumbotron .pricing_content .free_shipping .discount{
+    color: #9facb5;
+    text-decoration: line-through;
+    font-size: 2.8rem;
+    font-family:"Arial Narrow";
+    font-weight: normal;
+    margin-right: 20px;
+}
+.pricing .jumbotron .pricing_content .free_shipping .badge-danger,
+.pricing .jumbotron .pricing_content .free_shipping button,
+.contact_us .jumbotron .Leave_Message form button,
+.contact_us .jumbotron .Leave_Message form button:active{
+
+    background-color:#E01705;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-family:"Arial Narrow";
+    font-weight: normal;
+}
+.pricing .jumbotron .pricing_content .free_shipping h1{
+    font-family:"Arial Narrow";
+    color:#0a1f44;
+    font-weight: bold;
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+.pricing .jumbotron .pricing_content .free_shipping h6,
+.pricing .jumbotron .pricing_content .free_shipping p
+{
+    color:#0a1f44;
+    font-family:VarelaRound-Regular;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.pricing .jumbotron .pricing_content .free_shipping ul{
+    text-align: left;
+    font-weight: normal;
+    margin-bottom:40px;
+}
+.pricing .jumbotron .pricing_content .free_shipping ul li{
+    list-style-image: url("../images/pricing/icon.png") ;
+    line-height: 3rem;
+    margin-left: 54px;
+}
+.pricing .jumbotron .pricing_content .free_shipping button{
+    text-transform: capitalize;
+    width: 83%;
+    font-size: 1.1rem;
+}
+.pricing .jumbotron .pricing_content .free_shipping p {
+    margin-bottom: 0;
+    padding-top: 10px;
+    font-weight: normal;
+}
+/*question*/
+.question{
+    margin: 0;
+}
+.question .jumbotron{
+    margin-bottom: 0;
+}
+.question .jumbotron .left_question h2 {
+    font-size: 1.1rem;
+}
+/*contact us*/
+.contact_us{
+    border: 1px solid #eeeeee;
+    background-color: white!important;
+    height: 521px;
+}
+.contact_us .container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
+.contact_us .container-fluid .jumbotron{
+    padding:0;
+    background-color: transparent!important;
+}
+.contact_us .container-fluid .jumbotron .row{
+    margin: 0;
+}
+.contact_us .jumbotron .contact_address{
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 100%;
+    padding: 100px 20px 100px 290px ;
+}
+.contact_us .jumbotron .contact_address h1,
+.contact_us .jumbotron .Leave_Message h1
+{
+    font-size: 1.5rem;
+}
+.contact_us .jumbotron .contact_address .collaborate{
+    margin-top: 45px;
+}
+.contact_us .jumbotron .contact_address .collaborate h6{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+.contact_us .jumbotron .contact_address .collaborate .fas{
+    margin-right: 5px;
+}
+.contact_us .jumbotron .contact_address .collaborate p{
+    margin-bottom: 0;
+}
+
+.contact_us .jumbotron .Leave_Message{
+    background-color: white;
+    width: 100%;
+    height: 518px;
+    padding: 100px 290px 100px 40px ;
+}
+.contact_us .jumbotron .Leave_Message form input,
+.contact_us .jumbotron .Leave_Message form textarea{
+    background-color: #fcfcfc;
+}
+.contact_us .jumbotron .Leave_Message form input:focus,
+.contact_us .jumbotron .Leave_Message form textarea:focus{
+    box-shadow: none;
+}
+.contact_us .jumbotron .Leave_Message form input::placeholder,
+.contact_us .jumbotron .Leave_Message form textarea::placeholder{
+    font-family: "Arial Narrow";
+    color: #9facb5;
+}
+.contact_us .jumbotron .Leave_Message form button{
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+}
+/*save*/
+.save{
+    padding: 80px 0;
+    background-color: white;
+}
+.save .title button{
+    padding: 8px 20px;
+    border: none;
+}
+.save .title button:active{
+    background-color:#E01705!important;
+}
+/*footer*/
+footer{
+    background-color:#0a1f44;
+    padding: 50px 0;
+
+}
+.top_footer{
+    border-bottom: 1px solid #233657;
+    padding-bottom: 20px;
+}
+.top_footer ul .nav-link{
+    display: inline-block!important;
+    color: #c1c6cf;
+    font-family:VarelaRound-Regular;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.8rem;
+    float: right;
+}
+.bottom_footer{
+    padding-top: 30px;
+}
+.bottom_footer .social a{
+    color: white;
+    margin-right: 10px;
+    color: #ced2d9;
+}
+.bottom_footer .bottom_link a{
+    color: white!important;
+    font-family:VarelaRound-Regular;
+    float: right;
+    font-size: 0.8rem;
+}
+
